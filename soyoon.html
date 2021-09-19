@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>soyoon</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css"></style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <main id="home">
+        <div>
+            <video id="myvideo" autoplay loop muted width="100%">
+                <source src="http://eenooyos.com/mysoso/wavee.mp4">
+            </video>
+        </div>
+
+        <div>
+            <h1>SO YOON<br>
+                Front-End Developer</h1>
+        </div>
+
+        <header>
+            <div onclick="location.href='#'">
+                <video autoplay loop muted>
+                    <source src="http://eenooyos.com/mysoso/mo.mp4">
+                </video>
+            </div>
+
+            <div>
+                <div onclick="location.href='#1'">
+                    <h3>ABOUT</h3>
+                </div>
+                <div onclick="location.href='#2'">
+                    <h3>FAVORITE</h3>
+                </div>
+                <div onclick="location.href='#3'">
+                    <h3>CONTACT</h3>
+                </div>
+            </div>
+        </header>
+
+    </main>
+
+    <article class="one" id="1">
+
+        <section>
+            <div>
+                <h2>About Me</h2>
+            </div>
+            <p>
+                도태되지 않는 <b>Frontend 를 꿈꾸는 주니어 개발자 박소윤</b> 입니다.<br>
+                처음 도전하는 분야인 만큼, <b>끊임없이 배우고 성장하는 개발자</b>를 꿈꿉니다. <br>
+                배움에있어 큰 성취감을 느끼며, <b>계속해서 발전해 나가는 개발자</b>가 되겠습니다.
+            </p>
+        </section>
+
+        <section data-aos="fade-right" data-aos-duration="1100">
+            <div>
+                <img src="https://i.ibb.co/bPn5NJC/Kakao-Talk-Photo-2021-09-17-11-39-21.jpg">
+            </div>
+        </section>
+
+    </article>
+
+
+    <article class="two" id="2">
+
+        <h2>My Favorite</h2>
+
+        <div #swiperRef="" class="swiper mySwiper" data-aos="fade-right" data-aos-duration="1100">
+            <section class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div></div>
+                    <div>
+                        <span>🫐love food</span>
+                        <p><b>그릭요거트</b>를 사랑하고,</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div></div>
+                    <div>
+                        <span>☕love food</span>
+                        <p><b>카페</b>에 가는것을 좋아합니다.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div></div>
+                    <div>
+                        <span>🍲love food</span>
+                        <p><b>순대국</b>은 저의 일부입니다ㅎㅎ</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div></div>
+                    <div>
+                        <span>🪴Plants</span>
+                        <p>식물을 좋아해 많은 <b>반려식물</b> 보유!</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <video controls muted>
+                        <source src="http://eenooyos.com/mysoso/hhh.mp4">
+                    </video>
+                    <div>
+                        <span>🎸Hobby</span>
+                        <p>취미는 <b>기타</b>치기입니다.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
+
+        <div class="swiper-pagination"></div>
+
+    </article>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
+
+    <article class="three" id="3">
+
+        <h2>&nbsp;&nbsp;contact me</h2>
+
+        <div data-aos="fade-right" data-aos-duration="1100">
+
+            <div>
+                <section onclick="location.href='tel:01096641906'" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <div>
+                        <img src="https://cdn0.iconfinder.com/data/icons/picons-social/57/64-viber-2-1024.png">
+                        <h1 class="back">1</h1>
+                    </div>
+
+                    <p><span>전화번호</span><br>010-9664-1906</p>
+                </section>
+
+                <section onclick="location.href='https://github.com/eenooy'" target="_blank" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <div>
+                        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-512.png">
+                        <h1 class="back">2</h1>
+                    </div>
+
+                    <p><span>GITHUB</span> <br>https://github.com/eenooy</p>
+                </section>
+
+                <section onclick="location.href='mailto:eenooyos@gmail.com'" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                    <div>
+                        <img src="https://cdn1.iconfinder.com/data/icons/common-version-3-0/1024/navigation-512.png">
+                        <h1 class="back">3</h1>
+                    </div>
+
+                    <p><span>E-mail</span> <br>eenooyos@gmail.com</p>
+                </section>
+
+                <section onclick="location.href='https://velog.io/@eenooyos'" target="_blank" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                    <div>
+                        <img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/53-vimeo-1024.png">
+                        <h1 class="back">4</h1>
+                    </div>
+
+                    <p><span>Velog</span> <br>https://velog.io/@eenooyos</p>
+                </section>
+
+                <section onclick="location.href='https://www.instagram.com/eenooyos/'" target="_blank" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2300">
+                    <div>
+                        <img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-3-1024.png">
+                        <h1 class="back">5</h1>
+                    </div>
+
+                    <p><span>Instagram</span></p>
+                </section>
+            </div>
+
+
+        </div>
+
+    </article>
+
+    <footer>
+        <p>Copyright © 2021 | All rights reserved. | SOYOON PARK</p>
+    </footer>
+
+    <script>
+        AOS.init();
+
+    </script>
+
+
+</body>
+
+</html>

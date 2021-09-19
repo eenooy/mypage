@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid silver;
+}
+
+img {
+    width: 100px;
+}
+
+body {
+    font-family: 'SpoqaHanSansNeo-Light';
+    font-size: 0.9rem;
+    line-height: 1rem;
+    color: #999;
+    letter-spacing: 0.1px;
+    cursor: url(cursor.cur),auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Michroma', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+}
+
+h5 {
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+}
+
+a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #666;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: red;
+}
+
+button {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    background: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+/**/
+
+main {
+    height: 700px;
+    background: #EAECD4;
+    position: relative;
+}
+
+main > :nth-child(1) video {
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 4rem);
+}
+
+main > :nth-child(2) {
+    width: 1200px;
+    color: #666;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+main > :nth-child(3) {
+    width: 1200px;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    background: #88A2A4;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 4.5rem)
+}
+
+main > :nth-child(3) > :first-child {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+main > :nth-child(3) > :first-child video {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+main > :nth-child(3) > :last-child {
+    display: flex;
+    color: white;
+}
+
+main > :nth-child(3) > :last-child div {
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main > :nth-child(3) > :last-child div:hover {
+    color: #777;
+}
+
+.one {
+    width: 1200px;
+    padding: 13rem 0;
+    margin: 0 auto;
+    display: flex;
+}
+
+.one > :first-child {
+    width: 800px;
+    padding: 8rem 0;
+}
+
+.one > :first-child div {
+    margin-bottom: 3rem;
+    color: #777;
+    text-shadow: 5px 5px #88A2A4;
+}
+
+.one > :first-child p {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: #999;
+}
+
+.one > :first-child p b {
+    color: black;
+}
+
+.one > :last-child {
+    width: 500px;
+    height: 500px;
+    background: url(https://i.ibb.co/48NHdD0/Kakao-Talk-Photo-2021-09-17-11-39-38.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.one > :last-child img {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    transform: translate(-50px, 0)
+}
+
+.two {
+    width: 1200px;
+    margin: 0 auto 13rem;
+    position: relative;
+}
+
+.two > :nth-child(1) {
+    margin-bottom: 3rem;
+    color: #777;
+    text-shadow: 5px 5px #88A2A4;
+}
+
+.two > :nth-child(2) {
+    display: flex;
+}
+
+.two > :nth-child(2) section > div > :first-child {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.two > :nth-child(2) section > :nth-child(1) > :first-child {
+    background: url(https://i.ibb.co/Csdv7PY/Kakao-Talk-Photo-2021-09-17-15-29-24.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.two > :nth-child(2) section > :nth-child(2) > :first-child {
+    background: url(https://i.ibb.co/wMWHdBM/Kakao-Talk-Photo-2021-09-17-15-29-51.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.two > :nth-child(2) section > :nth-child(3) > :first-child {
+    background: url(https://i.ibb.co/60kKLwW/Kakao-Talk-Photo-2021-09-17-15-29-45.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.two > :nth-child(2) section > :nth-child(4) > :first-child {
+    background: url(https://i.ibb.co/kHkcKq4/Kakao-Talk-Photo-2021-09-17-15-29-31.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.two > :nth-child(2) section > div > :last-child span {
+    font-family: 'Michroma', sans-serif;
+    color: #777;
+}
+
+.two > :nth-child(2) section > div > :last-child p {
+    margin-top: 1rem;
+    color: #777;
+    font-size: 1rem;
+}
+
+.two > :nth-child(2) section > div > :last-child p b {
+    color: black;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-block;
+    display: block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.two > :nth-child(3) > :first-child {
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+}
+
+.two > :nth-child(3) > :last-child {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+
+.two > :nth-child(4) {
+    position: relative;
+    bottom: -1rem;
+}
+
+.three {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0rem 0 13rem;
+}
+
+.three > :first-child {
+    margin-bottom: 3rem;
+    color: #777;
+    text-shadow: 5px 5px #88A2A4;
+}
+
+.three > :last-child {
+    padding: 3rem;
+    background: #88A2A4;
+}
+
+.three > :last-child > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.three > :last-child > div section {
+    width: 100%;
+    padding: 1rem;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.three > :last-child > div section:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.three > :last-child section > :first-child {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.three > :last-child > div section > :first-child > :first-child {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 1rem;
+    filter: invert(100);
+}
+
+.three > :last-child > div section > :first-child > :last-child {
+    margin-left: 2rem;
+    color: white;
+}
+
+.three > :last-child > div section > :last-child {
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.three > :last-child > div section > :last-child span {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+footer {
+    padding: 5rem 0;
+    background: #eee;
+    text-align: center;
+}
